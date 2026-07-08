@@ -1,0 +1,27 @@
+export interface Props {
+  inHome?: boolean;
+}
+
+const Header = ({ inHome }: Props) => {
+  return (
+    <header className="nav">
+      <a
+        className="brand"
+        href={inHome ? "#top" : "/#top"}
+        aria-label="Treignac Plage Restaurant"
+      >
+        <img src="/logo.jpg" alt="" />
+        <span>Treignac Plage</span>
+      </a>
+      {inHome ? (
+        <nav aria-label="Navigation principale">
+          <a href="#carte">Carte</a>
+          <a href="#lac">Le lac</a>
+          <a href="#venir">Venir</a>
+        </nav>
+      ) : null}
+    </header>
+  );
+};
+
+export default Header;

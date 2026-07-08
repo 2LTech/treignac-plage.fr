@@ -1,0 +1,16 @@
+.agents
+.codex
+
+.next/
+node_modules/
+out/
+
+.env
+.env*.local
+
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
