@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Footer from "../assets/footer";
 import Header from "../assets/header";
 
@@ -31,7 +32,17 @@ const Home = () => (
         <div className="heroRow">
           <div className="heroLogo">
             <p className="eyebrow">Restaurant de plage · Lac des Bariousses</p>
-            <img src="/logo-nobackground.png" alt="" />
+            <Image
+              src="/logo-nobackground.png"
+              alt=""
+              width={1392}
+              height={1392}
+              sizes="100%"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            />
           </div>
           <p className="lead">
             Restaurant, bar, snack et glacier au bord de l'eau : une adresse
@@ -94,9 +105,11 @@ const Home = () => (
 
     <section className="lake" id="lac" aria-label="Lac des Bariousses">
       <div className="lakeImage">
-        <img
+        <Image
           src="/lac-bariousses.jpg"
           alt="Plage du lac des Bariousses à Treignac"
+          width={1200}
+          height={786}
         />
       </div>
       <div className="lakeText">

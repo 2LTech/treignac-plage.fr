@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 const Footer = () => {
   return (
     <section className="footer" aria-label="Bas de page">
       <a href="/legal">Mentions légales</a>
       <div>
         Conçu avec{" "}
-        <img
+        <Image
           src="/heart.svg"
           alt="amour"
           className="heart"

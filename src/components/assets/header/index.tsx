@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export interface Props {
   inHome?: boolean;
 }
@@ -10,7 +12,7 @@ const Header = ({ inHome }: Props) => {
         href={inHome ? "#top" : "/#top"}
         aria-label="Treignac Plage Restaurant"
       >
-        <img src="/logo.jpg" alt="" />
+        <Image src="/logo.jpg" alt="" width={44} height={44} />
         <span>Treignac Plage</span>
       </a>
       {inHome ? (
