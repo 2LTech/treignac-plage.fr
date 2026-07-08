@@ -12,7 +12,12 @@ const Header = ({ inHome }: Props) => {
         href={inHome ? "#top" : "/#top"}
         aria-label="Treignac Plage Restaurant"
       >
-        <Image src="/logo.jpg" alt="" width={44} height={44} />
+        <Image
+          src="https://2ltech.github.io/treignac-plage.fr/logo.jpg"
+          alt=""
+          width={44}
+          height={44}
+        />
         <span>Treignac Plage</span>
       </a>
       {inHome ? (
