@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import "./index.css";
+
 const Footer = () => {
   return (
     <section className="footer" aria-label="Bas de page">

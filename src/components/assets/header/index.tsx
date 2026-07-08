@@ -1,15 +1,26 @@
 import Image from "next/image";
 
+import Button from "../button";
+
+import "./index.css";
+
+// Interfaces
 export interface Props {
   inHome?: boolean;
 }
 
+/**
+ * Header
+ * @param props Props
+ * @returns Header
+ */
 const Header = ({ inHome }: Props) => {
   return (
     <header className="nav">
-      <a
+      <Button
         className="brand"
         href={inHome ? "#top" : "/#top"}
+        noAnimate
         aria-label="Treignac Plage Restaurant"
       >
         <Image
@@ -18,13 +29,20 @@ const Header = ({ inHome }: Props) => {
           width={44}
           height={44}
         />
-        <span>Treignac Plage</span>
-      </a>
+        <span>Treignac </span>
+        <span className="beach">Plage</span>
+      </Button>
       {inHome ? (
         <nav aria-label="Navigation principale">
-          <a href="#carte">Carte</a>
-          <a href="#lac">Le lac</a>
-          <a href="#venir">Venir</a>
+          <Button className="navButton" type="primary" href="#carte" noAnimate>
+            Carte
+          </Button>
+          <Button className="navButton" type="primary" href="#lac" noAnimate>
+            Le Lac
+          </Button>
+          <Button className="navButton" type="primary" href="#venir" noAnimate>
+            Venir
+          </Button>
         </nav>
       ) : null}
     </header>

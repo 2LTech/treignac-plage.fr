@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  background: var(--ink);
+  color: var(--white);
+  padding: 20px;
+}
+
+.footer .heart {
+  margin-bottom: -2px;
+}

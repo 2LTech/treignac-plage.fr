@@ -33,6 +33,8 @@ jobs:
           static_site_generator: next
       - name: Install dependencies
         run: yarn install
+      - name: Sitemap
+        run: yarn sitemap
       - name: Build with Next.js
         run: yarn build
       - name: Upload artifact

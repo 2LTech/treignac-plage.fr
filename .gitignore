@@ -1,5 +1,6 @@
 .agents
 .codex
+.vscode
 
 .next/
 node_modules/
@@ -14,3 +15,6 @@ out/
 !.yarn/sdks
 !.yarn/versions
 
+public/robots.txt
+public/sitemap.xml
+public/sitemap-*.xml
