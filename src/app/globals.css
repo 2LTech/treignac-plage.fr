@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: "BroadwayRegular";
-  src: url("/fonts/BroadwayRegular.ttf");
+  src: url("https://2ltech.github.io/treignac-plage.fr/fonts/BroadwayRegular.ttf");
 }
 
 @font-face {
   font-family: "Through";
-  src: url("/fonts/through.otf");
+  src: url("https://2ltech.github.io/treignac-plage.fr/fonts/through.otf");
 }
 
 :root {
