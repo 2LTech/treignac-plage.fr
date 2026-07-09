@@ -119,7 +119,7 @@ const Home = () => (
     <section className="lake" id="lac" aria-label="Lac des Bariousses">
       <div className="lakeImage">
         <Image
-          src="/terrasse_1.jpg"
+          src="/galerie/terrasse.jpg"
           alt="Plage du lac des Bariousses à Treignac"
           width={1200}
           height={786}
