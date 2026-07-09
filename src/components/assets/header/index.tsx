@@ -32,6 +32,14 @@ const Header = ({ inHome }: Props) => {
           <Button className="navButton" type="primary" href="#carte" noAnimate>
             Carte
           </Button>
+          <Button
+            className="navButton"
+            type="primary"
+            href="#galerie"
+            noAnimate
+          >
+            Galerie
+          </Button>
           <Button className="navButton" type="primary" href="#lac" noAnimate>
             Le Lac
           </Button>

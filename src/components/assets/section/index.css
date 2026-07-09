@@ -1,0 +1,72 @@
+.section {
+  padding: clamp(64px, 9vw, 120px) clamp(20px, 5vw, 72px);
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.9fr);
+  gap: clamp(32px, 7vw, 96px);
+  align-items: start;
+  background: var(--white);
+}
+
+.section.notitle {
+  grid-template-columns: auto;
+}
+
+.section.nopadding {
+  padding: 0 clamp(20px, 5vw, 72px);
+}
+
+.section.invert .sectionChildren {
+  grid-row: 1;
+}
+
+.section.pink {
+  background:
+    linear-gradient(90deg, rgba(239, 183, 197, 0.23), rgba(255, 255, 255, 0)),
+    var(--rose-soft);
+}
+
+.section.black {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.sectionKicker {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  font-family: 'Andellia';
+  font-weight: bold;
+}
+
+.section.black .sectionKicker {
+  color: var(--rose);
+}
+
+.sectionSubTitle {
+  color: var(--muted);
+}
+
+.section.black .sectionSubTitle {
+  color: var(--white);
+}
+
+.sectionChildren p {
+  color: var(--muted);
+  font-size: 1.11rem;
+  margin: 10px 0 0;
+}
+
+.section.black .sectionChildren p {
+  color: var(--white);
+}
+
+@media (max-width: 900px) {
+  .section {
+    grid-template-columns: 1fr;
+  }
+
+  .section.invert .sectionChildren {
+    grid-row: unset;
+  }
+}
