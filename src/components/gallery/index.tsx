@@ -1,17 +1,24 @@
+'use client'
+
 import Image from 'next/image'
+import { useState } from 'react'
 
 import './index.css'
-import Section from '../assets/section'
 
 export interface Photo {
   src: string
   alt: string
   width: number
   height: number
-  className?: string
 }
 
 const photos: Photo[] = [
+  {
+    src: '/galerie/terrasse.jpg',
+    alt: 'Terrasse du restaurant Treignac Plage au bord du lac',
+    width: 2048,
+    height: 1536
+  },
   {
     src: '/galerie/plat_1.jpg',
     alt: 'Assiette servie au restaurant Treignac Plage',
@@ -38,23 +45,77 @@ const photos: Photo[] = [
   }
 ]
 
-const Gallery = () => (
-  <div className="gallery">
-    {photos.map((photo) => (
-      <figure
-        className={`galleryPhoto ${photo.className ?? ''}`}
-        key={photo.src}
-      >
-        <Image
-          src={photo.src}
-          alt={photo.alt}
-          width={photo.width}
-          height={photo.height}
-          sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw"
-        />
-      </figure>
-    ))}
-  </div>
-)
+const Gallery = () => {
+  const [activeIndex, setActiveIndex] = useState(0)
+
+  const goToPrevious = () => {
+    setActiveIndex((current) =>
+      current === 0 ? photos.length - 1 : current - 1
+    )
+  }
+
+  const goToNext = () => {
+    setActiveIndex((current) =>
+      current === photos.length - 1 ? 0 : current + 1
+    )
+  }
+
+  return (
+    <div className="galleryCarousel">
+      <div className="galleryViewport">
+        <div
+          className="galleryTrack"
+          style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+        >
+          {photos.map((photo, index) => (
+            <figure className="gallerySlide" key={photo.src}>
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                width={photo.width}
+                height={photo.height}
+                sizes="(max-width: 900px) 100vw, 50vw"
+                priority={index === 0}
+              />
+            </figure>
+          ))}
+        </div>
+      </div>
+
+      <div className="galleryControls">
+        <button
+          className="galleryArrow"
+          type="button"
+          onClick={goToPrevious}
+          aria-label="Photo précédente"
+        >
+          <span aria-hidden="true">&lt;</span>
+        </button>
+
+        <div className="galleryDots" aria-label="Choisir une photo">
+          {photos.map((photo, index) => (
+            <button
+              className={`galleryDot ${index === activeIndex ? 'active' : ''}`}
+              type="button"
+              key={photo.src}
+              onClick={() => setActiveIndex(index)}
+              aria-label={`Voir la photo ${index + 1}`}
+              aria-current={index === activeIndex}
+            />
+          ))}
+        </div>
+
+        <button
+          className="galleryArrow"
+          type="button"
+          onClick={goToNext}
+          aria-label="Photo suivante"
+        >
+          <span aria-hidden="true">&gt;</span>
+        </button>
+      </div>
+    </div>
+  )
+}
 
 export default Gallery
