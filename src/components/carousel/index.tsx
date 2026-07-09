@@ -5,6 +5,7 @@ import { useState } from 'react'
 
 import './index.css'
 
+// Interface
 export interface Photo {
   src: string
   alt: string
@@ -12,6 +13,7 @@ export interface Photo {
   height: number
 }
 
+// Photos
 const photos: Photo[] = [
   {
     src: '/galerie/terrasse.jpg',
@@ -45,7 +47,11 @@ const photos: Photo[] = [
   }
 ]
 
-const Gallery = () => {
+/**
+ * Carousel
+ * @returns Carousel
+ */
+const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   const goToPrevious = () => {
@@ -61,14 +67,18 @@ const Gallery = () => {
   }
 
   return (
-    <div className="galleryCarousel">
-      <div className="galleryViewport">
+    <div className="carousel">
+      <div className="carouselViewport">
         <div
-          className="galleryTrack"
+          className="carouselTrack"
           style={{ transform: `translateX(-${activeIndex * 100}%)` }}
         >
           {photos.map((photo, index) => (
-            <figure className="gallerySlide" key={photo.src}>
+            <figure
+              className="carouselSlide"
+              key={photo.src}
+              aria-hidden={index !== activeIndex}
+            >
               <Image
                 src={photo.src}
                 alt={photo.alt}
@@ -82,9 +92,9 @@ const Gallery = () => {
         </div>
       </div>
 
-      <div className="galleryControls">
+      <div className="carouselControls">
         <button
-          className="galleryArrow"
+          className="carouselArrow"
           type="button"
           onClick={goToPrevious}
           aria-label="Photo précédente"
@@ -92,10 +102,10 @@ const Gallery = () => {
           <span aria-hidden="true">&lt;</span>
         </button>
 
-        <div className="galleryDots" aria-label="Choisir une photo">
+        <div className="carouselDots" aria-label="Choisir une photo">
           {photos.map((photo, index) => (
             <button
-              className={`galleryDot ${index === activeIndex ? 'active' : ''}`}
+              className={`carouselDot ${index === activeIndex ? 'active' : ''}`}
               type="button"
               key={photo.src}
               onClick={() => setActiveIndex(index)}
@@ -106,7 +116,7 @@ const Gallery = () => {
         </div>
 
         <button
-          className="galleryArrow"
+          className="carouselArrow"
           type="button"
           onClick={goToNext}
           aria-label="Photo suivante"
@@ -118,4 +128,4 @@ const Gallery = () => {
   )
 }
 
-export default Gallery
+export default Carousel

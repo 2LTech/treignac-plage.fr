@@ -3,11 +3,12 @@ import Image from 'next/image'
 import Footer from '../assets/footer'
 import Header from '../assets/header'
 import Button from '../assets/button'
-import Gallery from '../gallery'
+import Carousel from '../carousel'
 import Section from '../assets/section'
 
 import './index.css'
 
+// Data
 const googleMapsUrl =
   'https://www.google.fr/maps/place/Treignac+Plage+Restaurant/@45.5601224,1.814686,17z/data=!4m6!3m5!1s0x47f8ff18461683e7:0x309b3107c09ceb0c!8m2!3d45.5601224!4d1.814686!16s%2Fg%2F11zglw6r6y'
 const openStreetMapUrl =
@@ -31,6 +32,10 @@ const moments = [
   }
 ]
 
+/**
+ * Home
+ * @returns Home
+ */
 const Home = () => (
   <main>
     <Header inHome />
@@ -76,10 +81,10 @@ const Home = () => (
       aria-label="Accueil"
       id="top"
     >
-      <p>
+      <h1>
         Restaurant, bar, snack et glacier au bord de l&apos;eau : une adresse
         lumineuse pour manger, trinquer et prolonger les belles journées au lac.
-      </p>
+      </h1>
     </Section>
 
     <Section
@@ -142,7 +147,7 @@ const Home = () => (
       }}
       aria-label="Galerie photo"
     >
-      <Gallery />
+      <Carousel />
     </Section>
 
     <Section

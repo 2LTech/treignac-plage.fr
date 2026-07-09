@@ -1,5 +1,6 @@
 import './index.css'
 
+// Props
 export interface Props {
   children: React.ReactElement | React.ReactElement[] | string
   className?: string
@@ -8,8 +9,14 @@ export interface Props {
   noAnimate?: boolean
   dark?: boolean
   external?: boolean
+  'aria-label'?: string
 }
 
+/**
+ * Button
+ * @param props Props
+ * @returns Button
+ */
 const Button = ({
   children,
   className,
@@ -17,13 +24,15 @@ const Button = ({
   href,
   noAnimate,
   dark,
-  external
+  external,
+  ...props
 }: Props) => (
   <a
     className={`button ${className ?? ''} ${type ?? ''} ${noAnimate ? 'noanimate' : ''} ${dark ? 'dark' : ''}`}
     href={href}
     target={external ? '_blank' : undefined}
     rel={external ? 'noreferrer' : undefined}
+    {...props}
   >
     {children}
   </a>

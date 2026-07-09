@@ -2,6 +2,10 @@ import Image from 'next/image'
 
 import './index.css'
 
+/**
+ * Footer
+ * @returns Footer
+ */
 const Footer = () => {
   return (
     <section className="footer" aria-label="Bas de page">

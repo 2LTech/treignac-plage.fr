@@ -1,5 +1,8 @@
+import { useMemo } from 'react'
+
 import './index.css'
 
+// Props
 export interface Props {
   children: React.ReactElement | React.ReactElement[] | string
   className?: string
@@ -16,8 +19,14 @@ export interface Props {
     subLabel?: React.ReactElement | string
     extra?: React.ReactElement | string
   }
+  'aria-label'?: string
 }
 
+/**
+ * Section
+ * @param props Props
+ * @returns Section
+ */
 const Section = ({
   children,
   className,
@@ -26,28 +35,45 @@ const Section = ({
   noPadding,
   invert,
   id,
-  title
-}: Props) => (
-  <section
-    className={`section ${background} ${className ?? ''} ${title ? '' : 'notitle'} ${noPadding ? 'nopadding' : ''} ${invert ? 'invert' : ''}`}
-    id={id}
-    aria-label="Galerie photo"
-  >
-    {title ? (
-      <div className="sectionTitle">
-        <p className="sectionKicker">{title.kicker}</p>
-        {title.label ? <h2>{title.label}</h2> : null}
-        {title.subLabel ? (
-          <p className="sectionSubTitle">{title.subLabel}</p>
-        ) : null}
-        {title.extra ?? null}
-      </div>
-    ) : null}
+  title,
+  ...props
+}: Props) => {
+  const titleLabel = useMemo(() => {
+    if (!title?.label) return null
 
-    <div className={`sectionChildren ${classNames?.children ?? ''}`}>
-      {children}
-    </div>
-  </section>
-)
+    return typeof title.label === 'string' ? (
+      <h2>{title.label}</h2>
+    ) : (
+      title.label
+    )
+  }, [title])
+
+  const titleSubLabel = useMemo(() => {
+    if (!title?.subLabel) return null
+
+    return <p className="sectionSubTitle">{title.subLabel}</p>
+  }, [title])
+
+  return (
+    <section
+      className={`section ${background} ${className ?? ''} ${title ? '' : 'notitle'} ${noPadding ? 'nopadding' : ''} ${invert ? 'invert' : ''}`}
+      id={id}
+      {...props}
+    >
+      {title ? (
+        <div className="sectionTitle">
+          <p className="sectionKicker">{title.kicker}</p>
+          {titleLabel}
+          {titleSubLabel}
+          {title.extra ?? null}
+        </div>
+      ) : null}
+
+      <div className={`sectionChildren ${classNames?.children ?? ''}`}>
+        {children}
+      </div>
+    </section>
+  )
+}
 
 export default Section

@@ -4,7 +4,7 @@ import Button from '../button'
 
 import './index.css'
 
-// Interfaces
+// Props
 export interface Props {
   inHome?: boolean
 }

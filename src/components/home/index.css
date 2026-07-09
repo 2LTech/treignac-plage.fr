@@ -17,9 +17,11 @@
   margin-bottom: 28px;
 }
 
-.heroContent p {
+.heroContent h1 {
   color: var(--ink);
   font-size: clamp(1.03rem, 2vw, 1.26rem);
+  font-weight: normal;
+  line-height: 2rem;
 }
 
 .heroActions {
