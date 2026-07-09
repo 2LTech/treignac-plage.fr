@@ -9,7 +9,7 @@ const Footer = () => {
       <div>
         Conçu avec{' '}
         <Image
-          src="https://2ltech.github.io/treignac-plage.fr/heart.svg"
+          src="/heart.svg"
           alt="amour"
           className="heart"
           width={14}

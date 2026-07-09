@@ -23,12 +23,7 @@ const Header = ({ inHome }: Props) => {
         noAnimate
         aria-label="Treignac Plage Restaurant"
       >
-        <Image
-          src="https://2ltech.github.io/treignac-plage.fr/logo.jpg"
-          alt=""
-          width={44}
-          height={44}
-        />
+        <Image src="/logo.jpg" alt="" width={44} height={44} />
         <span>Treignac </span>
         <span className="beach">Plage</span>
       </Button>
