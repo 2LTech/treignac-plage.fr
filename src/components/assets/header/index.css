@@ -44,6 +44,12 @@
   padding: 6px;
 }
 
+@media (max-width: 900px) {
+  .gallery {
+    display: none;
+  }
+}
+
 @media (max-width: 700px) {
   .nav {
     padding: 14px 16px;

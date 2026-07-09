@@ -33,7 +33,7 @@ const Header = ({ inHome }: Props) => {
             Carte
           </Button>
           <Button
-            className="navButton"
+            className="navButton gallery"
             type="primary"
             href="#galerie"
             noAnimate
