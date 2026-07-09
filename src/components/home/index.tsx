@@ -37,7 +37,7 @@ const Home = () => (
           <div className="heroLogo">
             <p className="eyebrow">Restaurant de plage · Lac des Bariousses</p>
             <Image
-              src="https://2ltech.github.io/treignac-plage.fr/logo-nobackground.png"
+              src="/logo-nobackground.png"
               alt=""
               width={1392}
               height={1392}
@@ -119,7 +119,7 @@ const Home = () => (
     <section className="lake" id="lac" aria-label="Lac des Bariousses">
       <div className="lakeImage">
         <Image
-          src="https://2ltech.github.io/treignac-plage.fr/terrasse_1.jpg"
+          src="/terrasse_1.jpg"
           alt="Plage du lac des Bariousses à Treignac"
           width={1200}
           height={786}

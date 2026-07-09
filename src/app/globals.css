@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'BroadwayRegular';
-  src: url('https://2ltech.github.io/treignac-plage.fr/fonts/BroadwayRegular.ttf');
+  src: url('/fonts/BroadwayRegular.ttf');
 }
 
 @font-face {
   font-family: 'Through';
-  src: url('https://2ltech.github.io/treignac-plage.fr/fonts/through.otf');
+  src: url('/fonts/through.otf');
 }
 
 :root {
@@ -66,7 +66,7 @@ a {
       rgba(255, 250, 250, 0.18)
     ),
     linear-gradient(0deg, rgba(255, 250, 250, 0.9), rgba(255, 250, 250, 0)),
-    url('https://2ltech.github.io/treignac-plage.fr/repas_1.jpg') center / cover;
+    url('/repas_1.jpg') center / cover;
 }
 
 .heroContent {
