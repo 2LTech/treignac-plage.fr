@@ -21,7 +21,7 @@
   padding: 7px 14px 7px 8px;
 }
 
-.brand span {
+.brand span.broadway {
   font-family: var(--display);
   text-transform: uppercase;
   font-size: 1.18rem;
@@ -30,6 +30,7 @@
 
 .brand span.beach {
   font-family: var(--beach);
+  text-transform: none;
   font-weight: bold;
   color: var(--rose);
   font-size: 1.18rem;

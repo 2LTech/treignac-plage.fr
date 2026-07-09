@@ -176,6 +176,7 @@ const Home = () => (
     </section>
     <section className="social" aria-label="Réseaux sociaux">
       <div className="liens">
+        <p className="sectionKicker">Réseaux sociaux</p>
         <Button type="primary" href={facebookUrl} external dark>
           Suivez-nous sur Facebook
         </Button>

@@ -24,7 +24,7 @@ const Header = ({ inHome }: Props) => {
         aria-label="Treignac Plage Restaurant"
       >
         <Image src="/logo.jpg" alt="" width={44} height={44} />
-        <span>Treignac </span>
+        <span className="broadway">Treignac </span>
         <span className="beach">Plage</span>
       </Button>
       {inHome ? (
