@@ -1,31 +1,31 @@
-import Image from "next/image";
+import Image from 'next/image'
 
-import Footer from "../assets/footer";
-import Header from "../assets/header";
-import Button from "../assets/button";
+import Footer from '../assets/footer'
+import Header from '../assets/header'
+import Button from '../assets/button'
 
 const googleMapsUrl =
-  "https://www.google.fr/maps/place/Treignac+Plage+Restaurant/@45.5601224,1.814686,17z/data=!4m6!3m5!1s0x47f8ff18461683e7:0x309b3107c09ceb0c!8m2!3d45.5601224!4d1.814686!16s%2Fg%2F11zglw6r6y";
+  'https://www.google.fr/maps/place/Treignac+Plage+Restaurant/@45.5601224,1.814686,17z/data=!4m6!3m5!1s0x47f8ff18461683e7:0x309b3107c09ceb0c!8m2!3d45.5601224!4d1.814686!16s%2Fg%2F11zglw6r6y'
 const openStreetMapUrl =
-  "https://www.openstreetmap.org/?mlat=45.560058&mlon=1.814788#map=19/45.560058/1.814788";
-const facebookUrl = "https://www.facebook.com/profile.php?id=61591464093241";
+  'https://www.openstreetmap.org/?mlat=45.560058&mlon=1.814788#map=19/45.560058/1.814788'
+const facebookUrl = 'https://www.facebook.com/profile.php?id=61591464093241'
 
-const menuHighlights = ["Restaurant", "Bar", "Snack", "Glacier"];
+const menuHighlights = ['Restaurant', 'Bar', 'Snack', 'Glacier']
 
 const moments = [
   {
-    title: "Déjeuner les pieds légers",
-    text: "Une table simple après la baignade, la plage à quelques pas et le lac toujours dans le regard.",
+    title: 'Déjeuner les pieds légers',
+    text: 'Une table simple après la baignade, la plage à quelques pas et le lac toujours dans le regard.'
   },
   {
     title: "Verre frais face à l'eau",
-    text: "On s'installe pour un moment doux : une boisson, une planche de charcuterie, un rayon de soleil.",
+    text: "On s'installe pour un moment doux : une boisson, une planche de charcuterie, un rayon de soleil."
   },
   {
-    title: "Pause goûter et glaces",
-    text: "Après le sable, les jeux ou la balade, le glacier remet tout le monde d'accord.",
-  },
-];
+    title: 'Pause goûter et glaces',
+    text: "Après le sable, les jeux ou la balade, le glacier remet tout le monde d'accord."
+  }
+]
 
 const Home = () => (
   <main>
@@ -43,9 +43,10 @@ const Home = () => (
               height={1392}
               sizes="100%"
               style={{
-                width: "100%",
-                height: "auto",
+                width: '100%',
+                height: 'auto'
               }}
+              loading="eager"
             />
           </div>
           <p className="lead">
@@ -182,6 +183,6 @@ const Home = () => (
     </section>
     <Footer />
   </main>
-);
+)
 
-export default Home;
+export default Home

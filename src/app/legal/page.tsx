@@ -1,5 +1,5 @@
-import Legal from "../../components/legal";
+import Legal from '../../components/legal'
 
-const LegalPage = () => <Legal />;
+const LegalPage = () => <Legal />
 
-export default LegalPage;
+export default LegalPage

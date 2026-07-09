@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Parisienne&family=Poiret+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Parisienne&family=Poiret+One&display=swap');
 
 @font-face {
-  font-family: "BroadwayRegular";
-  src: url("https://2ltech.github.io/treignac-plage.fr/fonts/BroadwayRegular.ttf");
+  font-family: 'BroadwayRegular';
+  src: url('https://2ltech.github.io/treignac-plage.fr/fonts/BroadwayRegular.ttf');
 }
 
 @font-face {
-  font-family: "Through";
-  src: url("https://2ltech.github.io/treignac-plage.fr/fonts/through.otf");
+  font-family: 'Through';
+  src: url('https://2ltech.github.io/treignac-plage.fr/fonts/through.otf');
 }
 
 :root {
@@ -22,12 +22,12 @@
   --lake-soft: #edf8fa;
   --line: #efb7c5;
   --shadow: 0 24px 70px rgba(7, 7, 7, 0.12);
-  --display: "BroadwayRegular", sans-serif;
-  --beach: "Through";
-  --script: "Parisienne", "Segoe Script", "Brush Script MT", cursive;
+  --display: 'BroadwayRegular', sans-serif;
+  --beach: 'Through';
+  --script: 'Parisienne', 'Segoe Script', 'Brush Script MT', cursive;
   --sans:
-    "Montserrat", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+    'Montserrat', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
 }
 
 * {
@@ -66,7 +66,7 @@ a {
       rgba(255, 250, 250, 0.18)
     ),
     linear-gradient(0deg, rgba(255, 250, 250, 0.9), rgba(255, 250, 250, 0)),
-    url("https://2ltech.github.io/treignac-plage.fr/repas_1.jpg") center / cover;
+    url('https://2ltech.github.io/treignac-plage.fr/repas_1.jpg') center / cover;
 }
 
 .heroContent {
@@ -88,7 +88,7 @@ a {
   text-transform: uppercase;
   font-size: 0.78rem;
   letter-spacing: 0.08em;
-  font-family: "Through";
+  font-family: 'Through';
   font-weight: bold;
 }
 

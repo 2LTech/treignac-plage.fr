@@ -1,5 +1,5 @@
-import Footer from "../assets/footer";
-import Header from "../assets/header";
+import Footer from '../assets/footer'
+import Header from '../assets/header'
 
 const Legal = () => (
   <main>
@@ -103,6 +103,6 @@ const Legal = () => (
 
     <Footer />
   </main>
-);
+)
 
-export default Legal;
+export default Legal

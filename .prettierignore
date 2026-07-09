@@ -1,0 +1,7 @@
+.agents
+.codex
+.next
+.vscode
+.yarn
+node_modules
+next-env.d.ts

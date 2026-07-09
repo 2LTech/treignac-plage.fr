@@ -1,0 +1,26 @@
+name: Check
+on: push
+
+jobs:
+  build:
+    name: Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@main
+      - name: Corepack
+        run: corepack enable
+      - uses: actions/setup-node@master
+        with:
+          node-version: '24'
+      - name: Install
+        run: yarn install
+      - name: Depcheck
+        run: yarn depcheck
+      - name: Prettier
+        run: yarn prettier
+      - name: Lint
+        run: yarn lint
+      - name: Build
+        run: yarn build

@@ -1,13 +1,13 @@
-import "./index.css";
+import './index.css'
 
 export interface Props {
-  children: React.ReactElement | React.ReactElement[] | string;
-  className?: string;
-  type?: "primary" | "secondary";
-  href: string;
-  noAnimate?: boolean;
-  dark?: boolean;
-  external?: boolean;
+  children: React.ReactElement | React.ReactElement[] | string
+  className?: string
+  type?: 'primary' | 'secondary'
+  href: string
+  noAnimate?: boolean
+  dark?: boolean
+  external?: boolean
 }
 
 const Button = ({
@@ -17,16 +17,16 @@ const Button = ({
   href,
   noAnimate,
   dark,
-  external,
+  external
 }: Props) => (
   <a
-    className={`button ${className ?? ""} ${type ?? ""} ${noAnimate ? "noanimate" : ""} ${dark ? "dark" : ""}`}
+    className={`button ${className ?? ''} ${type ?? ''} ${noAnimate ? 'noanimate' : ''} ${dark ? 'dark' : ''}`}
     href={href}
-    target={external ? "_blank" : undefined}
-    rel={external ? "noreferrer" : undefined}
+    target={external ? '_blank' : undefined}
+    rel={external ? 'noreferrer' : undefined}
   >
     {children}
   </a>
-);
+)
 
-export default Button;
+export default Button

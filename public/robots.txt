@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /legal
+
+# Host
+Host: https://treignac-plage.fr
+
+# Sitemaps
+Sitemap: https://treignac-plage.fr/sitemap.xml

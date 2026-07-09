@@ -1,12 +1,12 @@
-import Image from "next/image";
+import Image from 'next/image'
 
-import Button from "../button";
+import Button from '../button'
 
-import "./index.css";
+import './index.css'
 
 // Interfaces
 export interface Props {
-  inHome?: boolean;
+  inHome?: boolean
 }
 
 /**
@@ -19,7 +19,7 @@ const Header = ({ inHome }: Props) => {
     <header className="nav">
       <Button
         className="brand"
-        href={inHome ? "#top" : "/#top"}
+        href={inHome ? '#top' : '/#top'}
         noAnimate
         aria-label="Treignac Plage Restaurant"
       >
@@ -46,7 +46,7 @@ const Header = ({ inHome }: Props) => {
         </nav>
       ) : null}
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

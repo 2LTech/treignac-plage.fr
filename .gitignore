@@ -14,7 +14,3 @@ out/
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
-
-public/robots.txt
-public/sitemap.xml
-public/sitemap-*.xml
