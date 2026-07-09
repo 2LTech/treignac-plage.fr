@@ -1,0 +1,109 @@
+.carousel {
+  width: 100%;
+}
+
+.carouselViewport {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--rose-soft);
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 48px rgba(7, 7, 7, 0.08);
+}
+
+.carouselTrack {
+  height: 100%;
+  display: flex;
+  transition: transform 320ms ease;
+}
+
+.carouselSlide {
+  min-width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.carouselSlide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.carouselControls {
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  gap: 12px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.carouselArrow,
+.carouselDot {
+  border: 1px solid var(--line);
+  background: var(--white);
+  color: var(--ink);
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease;
+}
+
+.carouselArrow {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  font: inherit;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.carouselDots {
+  min-height: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselDot {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border-radius: 999px;
+}
+
+.carouselArrow:hover,
+.carouselDot:hover,
+.carouselDot.active {
+  background: var(--rose);
+  border-color: var(--rose);
+}
+
+.carouselArrow:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .carouselViewport {
+    aspect-ratio: 16 / 11;
+  }
+}
+
+@media (max-width: 700px) {
+  .carouselViewport {
+    aspect-ratio: 4 / 5;
+  }
+
+  .carouselControls {
+    grid-template-columns: 44px 1fr 44px;
+    gap: 10px;
+  }
+
+  .carouselArrow {
+    width: 44px;
+    height: 44px;
+  }
+}

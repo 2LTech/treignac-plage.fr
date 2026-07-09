@@ -4,7 +4,7 @@ import Button from '../button'
 
 import './index.css'
 
-// Interfaces
+// Props
 export interface Props {
   inHome?: boolean
 }
@@ -31,6 +31,14 @@ const Header = ({ inHome }: Props) => {
         <nav aria-label="Navigation principale">
           <Button className="navButton" type="primary" href="#carte" noAnimate>
             Carte
+          </Button>
+          <Button
+            className="navButton"
+            type="primary"
+            href="#galerie"
+            noAnimate
+          >
+            Galerie
           </Button>
           <Button className="navButton" type="primary" href="#lac" noAnimate>
             Le Lac
