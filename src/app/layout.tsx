@@ -3,13 +3,13 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://treignac-plage.fr'),
-  title: 'Treignac Plage Restaurant | Bistrot au lac des Bariousses',
+  title: 'Treignac Plage Restaurant | Lac des Bariousses',
   description:
-    "Restaurant de plage à Treignac, au bord du lac des Bariousses : terrasse, pauses gourmandes et esprit vacances en Corrèze. Anciennement le Barriou's.",
+    "Restaurant de plage à Treignac, au bord du lac des Bariousses : cuisine française raffinée, terrasse, pauses gourmandes et esprit vacances en Corrèze. Anciennement le Barriou's.",
   openGraph: {
     title: 'Treignac Plage Restaurant',
     description:
-      'Une table simple et solaire au bord du lac des Bariousses, entre baignade, terrasse et nature corrézienne.',
+      'Cuisine française raffinée au bord du lac des Bariousses à Treignac. Une table simple et solaire, entre baignade, terrasse et nature corrézienne.',
     images: ['/logo.jpg']
   }
 }

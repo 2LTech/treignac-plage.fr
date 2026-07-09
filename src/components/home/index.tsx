@@ -153,6 +153,7 @@ const Home = () => (
     <Section
       id="lac"
       classNames={{ children: 'terraceImage' }}
+      background="pink"
       title={{
         kicker: 'Treignac · Corrèze',
         label: 'Le lac tout près, la terrasse juste là.',
