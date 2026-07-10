@@ -10,6 +10,7 @@
     linear-gradient(0deg, rgba(255, 250, 250, 0.9), rgba(255, 250, 250, 0)),
     url('/galerie/plat_1.jpg') center / cover;
   padding-top: 100px;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.9fr);
 }
 
 .heroContent {
@@ -144,6 +145,10 @@ dd {
 }
 
 @media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
   .momentsChildren {
     grid-template-columns: 1fr;
   }
@@ -157,6 +162,7 @@ dd {
   .heroContent {
     padding: 20px;
   }
+
   .menuGrid {
     grid-template-columns: 1fr;
   }

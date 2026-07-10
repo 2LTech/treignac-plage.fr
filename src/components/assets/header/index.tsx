@@ -23,7 +23,18 @@ const Header = ({ inHome }: Props) => {
         noAnimate
         aria-label="Treignac Plage Restaurant"
       >
-        <Image src="/logo.jpg" alt="" width={44} height={44} />
+        <Image
+          src="/logo.svg"
+          alt=""
+          width={378}
+          height={365}
+          sizes="100%"
+          style={{
+            width: '100%',
+            height: 'auto'
+          }}
+          loading="eager"
+        />
         <span className="broadway">Treignac </span>
         <span className="beach">Plage</span>
       </Button>
@@ -33,7 +44,7 @@ const Header = ({ inHome }: Props) => {
             Carte
           </Button>
           <Button
-            className="navButton gallery"
+            className="navButton galleryButton"
             type="primary"
             href="#galerie"
             noAnimate
