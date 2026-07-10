@@ -15,8 +15,34 @@ const googleMapsUrl =
 const openStreetMapUrl =
   'https://www.openstreetmap.org/?mlat=45.560058&mlon=1.814788#map=19/45.560058/1.814788'
 const facebookUrl = 'https://www.facebook.com/profile.php?id=61591464093241'
+const instagramUrl = 'https://www.instagram.com/treignacplage/'
 
-const menuHighlights = ['Restaurant', 'Bar', 'Snack', 'Glacier']
+const menus = [
+  {
+    key: 'bar',
+    logo: 'cocktail.svg',
+    file: '/menu/Treignac Plage_Espace bar.pdf',
+    label: 'Espace bar'
+  },
+  {
+    key: 'snack',
+    logo: 'pizza.svg',
+    file: '/menu/Treignac Plage_Espace petite faim.pdf',
+    label: 'Espace Petite Faim'
+  },
+  {
+    key: 'plats',
+    logo: 'hat.svg',
+    file: '/menu/Treignac Plage_Restaurant_Carte des Plats.pdf',
+    label: 'Carte Des Plats'
+  },
+  {
+    key: 'vin',
+    logo: 'wine.svg',
+    file: '/menu/Treignac Plage_Restaurant_Carte des Vins.pdf',
+    label: 'Carte Des Vins'
+  }
+]
 
 const moments = [
   {
@@ -116,10 +142,13 @@ const Home = () => (
       aria-label="Carte"
     >
       <div className="menuGrid">
-        {menuHighlights.map((item) => (
-          <article key={item} className="tile">
+        {menus.map((menu) => (
+          <article key={menu.key} className="tile">
             <span aria-hidden="true" />
-            <h3>{item}</h3>
+            <Button icon={menu.logo} href={menu.file} pink external>
+              {menu.label}
+            </Button>
+            {/* <h3>{item}</h3> */}
           </article>
         ))}
       </div>
@@ -224,6 +253,9 @@ const Home = () => (
     >
       <Button type="primary" href={facebookUrl} external dark>
         Suivez-nous sur Facebook
+      </Button>
+      <Button type="primary" href={instagramUrl} external dark>
+        Suivez-nous sur Instagram
       </Button>
     </Section>
     <Footer />

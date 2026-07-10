@@ -23,6 +23,16 @@
   transform: none;
 }
 
+.button.dark {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.button.pink {
+  background: var(--rose);
+  color: var(--white);
+}
+
 .button.primary {
   background: var(--white);
   color: var(--ink);
@@ -50,7 +60,6 @@
 }
 
 .button.secondary.dark {
-  border-color: var(--white);
   color: var(--white);
   background: var(--ink);
 }

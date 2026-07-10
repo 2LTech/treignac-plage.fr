@@ -56,13 +56,13 @@
   background: var(--rose);
 }
 
-.tile h3 {
+/* .tile h3 {
   margin: 0;
   font-family: var(--display);
   font-size: clamp(1.2rem, 2vw, 2.5rem);
   font-weight: 400;
   text-transform: uppercase;
-}
+} */
 
 /* MOMENTS */
 .momentsChildren {
