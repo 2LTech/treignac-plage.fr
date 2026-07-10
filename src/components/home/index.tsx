@@ -5,6 +5,7 @@ import Header from '../assets/header'
 import Button from '../assets/button'
 import Carousel from '../carousel'
 import Section from '../assets/section'
+import ZenChef from '../assets/zenchef'
 
 import './index.css'
 
@@ -47,10 +48,10 @@ const Home = () => (
         kicker: 'Restaurant de plage · Lac des Bariousses',
         label: (
           <Image
-            src="/logo-nobackground.png"
+            src="/logo.svg"
             alt=""
-            width={1392}
-            height={1392}
+            width={378}
+            height={265}
             sizes="100%"
             style={{
               width: '100%',
@@ -226,6 +227,8 @@ const Home = () => (
       </Button>
     </Section>
     <Footer />
+
+    <ZenChef />
   </main>
 )
 
