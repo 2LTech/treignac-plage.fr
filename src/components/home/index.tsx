@@ -19,23 +19,29 @@ const instagramUrl = 'https://www.instagram.com/treignacplage/'
 
 const menus = [
   {
-    key: 'bar',
-    logo: 'cocktail.svg',
-    file: '/menu/Treignac Plage_Espace bar.pdf',
-    label: 'Espace bar'
+    key: 'moment',
+    logo: 'clock.svg',
+    file: '/menu/0901_carte_moment.jpg',
+    label: 'Carte du Moment'
   },
   {
-    key: 'snack',
-    logo: 'pizza.svg',
-    file: '/menu/Treignac Plage_Espace petite faim.pdf',
-    label: 'Espace Petite Faim'
+    key: 'semaine',
+    logo: 'week.svg',
+    file: '/menu/0901_menu_semaine.jpg',
+    label: 'Menus de la Semaine'
   },
   {
-    key: 'plats',
+    key: 'samedi',
     logo: 'hat.svg',
-    file: '/menu/Treignac Plage_Restaurant_Carte des Plats.pdf',
-    label: 'Carte Des Plats'
+    file: '/menu/0905_menu_samedi.jpg',
+    label: 'Menus du Samedi Midi'
   },
+  // {
+  //   key: 'plats',
+  //   logo: 'hat.svg',
+  //   file: '/menu/Treignac Plage_Restaurant_Carte des Plats.pdf',
+  //   label: 'Carte Des Plats'
+  // },
   {
     key: 'vin',
     logo: 'wine.svg',

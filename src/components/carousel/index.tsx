@@ -40,6 +40,36 @@ const photos: Photo[] = [
     height: 1024
   },
   {
+    src: '/galerie/plat_4.jpg',
+    alt: 'Plat estival servi à Treignac Plage',
+    width: 768,
+    height: 1024
+  },
+  {
+    src: '/galerie/plat_5.jpg',
+    alt: 'Plat estival servi à Treignac Plage',
+    width: 768,
+    height: 1024
+  },
+  {
+    src: '/galerie/plat_6.jpg',
+    alt: 'Plat estival servi à Treignac Plage',
+    width: 768,
+    height: 1024
+  },
+  {
+    src: '/galerie/plat_7.jpg',
+    alt: 'Plat estival servi à Treignac Plage',
+    width: 768,
+    height: 1024
+  },
+  {
+    src: '/galerie/plat_8.jpg',
+    alt: 'Plat estival servi à Treignac Plage',
+    width: 768,
+    height: 1024
+  },
+  {
     src: '/galerie/cuisine.jpg',
     alt: 'Cuisine du restaurant Treignac Plage',
     width: 768,
