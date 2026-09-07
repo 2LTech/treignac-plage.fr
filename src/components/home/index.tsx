@@ -27,20 +27,20 @@ const menus = [
   {
     key: 'semaine',
     logo: 'week.svg',
-    file: '/menu/0901_menu_semaine.jpg',
+    file: '/menu/0907_menu_semaine.jpg',
     label: 'Menus de la Semaine'
   },
   {
-    key: 'samedi',
+    key: 'mecredi',
     logo: 'hat.svg',
-    file: '/menu/0905_menu_samedi.jpg',
-    label: 'Menus du Samedi Midi'
+    file: '/menu/0909_menu_mercredi.jpg',
+    label: 'Menu du Mercredi Soir'
   },
   // {
-  //   key: 'plats',
+  //   key: 'samedi',
   //   logo: 'hat.svg',
-  //   file: '/menu/Treignac Plage_Restaurant_Carte des Plats.pdf',
-  //   label: 'Carte Des Plats'
+  //   file: '/menu/0905_menu_samedi.jpg',
+  //   label: 'Menus du Samedi Midi'
   // },
   {
     key: 'vin',
