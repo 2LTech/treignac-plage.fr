@@ -31,7 +31,7 @@ jobs:
         with:
           static_site_generator: next
       - name: Install dependencies
-        run: YARN_ENABLE_SCRIPTS=falseyarn install
+        run: YARN_ENABLE_SCRIPTS=false yarn install
       - name: Build with Next.js
         run: yarn build
       - name: Upload artifact
