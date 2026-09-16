@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '24'
       - name: Install
-        run: yarn install
+        run: YARN_ENABLE_SCRIPTS=false yarn install
       - name: Depcheck
         run: yarn depcheck
       - name: Prettier

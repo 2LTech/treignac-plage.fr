@@ -21,8 +21,14 @@ const menus = [
   {
     key: 'moment',
     logo: 'clock.svg',
-    file: '/menu/0901_carte_moment.jpg',
+    file: '/menu/0914_carte_moment.jpeg',
     label: 'Carte du Moment'
+  },
+  {
+    key: 'vegan',
+    logo: 'vegan.svg',
+    file: '/menu/0914_menu_vegetarien.jpeg',
+    label: 'Suggestions Végétariennes'
   },
   {
     key: 'semaine',

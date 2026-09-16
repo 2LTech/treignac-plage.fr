@@ -3,7 +3,7 @@
 set -e
 
 # Install
-yarn install
+YARN_ENABLE_SCRIPTS=false yarn install
 
 # Depcheck
 yarn depcheck
