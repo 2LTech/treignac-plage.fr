@@ -33,7 +33,7 @@ const menus = [
   {
     key: 'semaine',
     logo: 'week.svg',
-    file: '/menu/0914_menu_semaine.jpg',
+    file: '/menu/0921_menu_semaine.jpg',
     label: 'Menus de la Semaine'
   },
   // {
@@ -42,12 +42,12 @@ const menus = [
   //   file: '/menu/0916_menu_mercredi.jpg',
   //   label: 'Menu du Mercredi Soir'
   // },
-  {
-    key: 'samedi',
-    logo: 'hat.svg',
-    file: '/menu/0919_menu_samedi.jpg',
-    label: 'Menus du Samedi Midi'
-  },
+  // {
+  //   key: 'samedi',
+  //   logo: 'hat.svg',
+  //   file: '/menu/0919_menu_samedi.jpg',
+  //   label: 'Menus du Samedi Midi'
+  // },
   {
     key: 'vin',
     logo: 'wine.svg',
