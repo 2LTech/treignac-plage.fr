@@ -36,12 +36,12 @@ const menus = [
     file: '/menu/0921_menu_semaine.jpg',
     label: 'Menus de la Semaine'
   },
-  // {
-  //   key: 'mecredi',
-  //   logo: 'hat.svg',
-  //   file: '/menu/0916_menu_mercredi.jpg',
-  //   label: 'Menu du Mercredi Soir'
-  // },
+  {
+    key: 'mecredi',
+    logo: 'hat.svg',
+    file: '/menu/0923_menu_mercredi.jpg',
+    label: 'Menu du Mercredi Soir'
+  },
   // {
   //   key: 'samedi',
   //   logo: 'hat.svg',
