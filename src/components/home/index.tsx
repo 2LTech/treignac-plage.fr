@@ -27,7 +27,7 @@ const menus = [
   {
     key: 'vegan',
     logo: 'vegan.svg',
-    file: '/menu/0914_menu_vegetarien.jpeg',
+    file: '/menu/0924_menu_vegetarien.jpeg',
     label: 'Suggestions Végétariennes'
   },
   {
@@ -39,15 +39,15 @@ const menus = [
   {
     key: 'mecredi',
     logo: 'hat.svg',
-    file: '/menu/0923_menu_mercredi.jpg',
+    file: '/menu/0930_menu_mercredi.jpeg',
     label: 'Menu du Mercredi Soir'
   },
-  // {
-  //   key: 'samedi',
-  //   logo: 'hat.svg',
-  //   file: '/menu/0919_menu_samedi.jpg',
-  //   label: 'Menus du Samedi Midi'
-  // },
+  {
+    key: 'samedi',
+    logo: 'hat.svg',
+    file: '/menu/0926_menu_samedi.jpeg',
+    label: 'Menus du Samedi Midi'
+  },
   {
     key: 'vin',
     logo: 'wine.svg',
