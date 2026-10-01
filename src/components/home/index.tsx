@@ -27,7 +27,7 @@ const menus = [
   {
     key: 'vegan',
     logo: 'vegan.svg',
-    file: '/menu/0924_menu_vegetarien.jpeg',
+    file: '/menu/1001_menu_vegetarien.jpeg',
     label: 'Suggestions Végétariennes'
   },
   {
