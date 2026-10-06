@@ -42,12 +42,12 @@ const menus = [
     file: '/menu/1007_menu_mercredi.jpeg',
     label: 'Menu du Mercredi Soir'
   },
-  // {
-  //   key: 'samedi',
-  //   logo: 'hat.svg',
-  //   file: '/menu/1003_menu_samedi.jpeg',
-  //   label: 'Menus du Samedi Midi'
-  // },
+  {
+    key: 'samedi',
+    logo: 'hat.svg',
+    file: '/menu/1010_menu_samedi.jpeg',
+    label: 'Menus du Samedi Midi'
+  },
   {
     key: 'vin',
     logo: 'wine.svg',
