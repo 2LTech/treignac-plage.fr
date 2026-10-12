@@ -3,7 +3,7 @@
 }
 
 .carouselViewport {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: auto;
   overflow: hidden;
   background: var(--rose-soft);
   border: 1px solid var(--line);
@@ -18,7 +18,7 @@
 
 .carouselSlide {
   min-width: 100%;
-  height: 100%;
+  max-height: 500px;
   margin: 0;
 }
 
@@ -86,17 +86,7 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 900px) {
-  .carouselViewport {
-    aspect-ratio: 16 / 11;
-  }
-}
-
 @media (max-width: 700px) {
-  .carouselViewport {
-    aspect-ratio: 4 / 5;
-  }
-
   .carouselControls {
     grid-template-columns: 44px 1fr 44px;
     gap: 10px;

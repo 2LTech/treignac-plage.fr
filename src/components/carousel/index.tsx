@@ -16,6 +16,12 @@ export interface Photo {
 // Photos
 const photos: Photo[] = [
   {
+    src: '/galerie/salle.jpeg',
+    alt: 'Salle du restaurant Treignac Plage au bord du lac',
+    width: 2016,
+    height: 1512
+  },
+  {
     src: '/galerie/terrasse.jpg',
     alt: 'Terrasse du restaurant Treignac Plage au bord du lac',
     width: 2048,
@@ -114,7 +120,6 @@ const Carousel = () => {
                 alt={photo.alt}
                 width={photo.width}
                 height={photo.height}
-                sizes="(max-width: 900px) 100vw, 50vw"
                 priority={index === 0}
               />
             </figure>
