@@ -21,7 +21,7 @@ const menus = [
   {
     key: 'moment',
     logo: 'clock.svg',
-    file: '/menu/1001_carte_moment.jpeg',
+    file: '/menu/1015_carte_moment.jpg',
     label: 'Carte du Moment'
   },
   {
