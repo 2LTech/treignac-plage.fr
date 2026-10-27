@@ -120,9 +120,17 @@ const Home = () => (
       aria-label="Accueil"
       id="top"
     >
-      <h1>
+      {/* <h1>
         Restaurant, bar, snack et glacier au bord de l&apos;eau : une adresse
         lumineuse pour manger, trinquer et prolonger les belles journées au lac.
+      </h1> */}
+      <h1 className="menu-du-jour">
+        <span className="titre">Menu du Jour</span>
+        <span className="sous-titre">Tous les midis</span>
+        <span className="jours">
+          Du <b>Lundi</b> au <b>Vendredi</b>
+        </span>
+        <span className="prix">19€</span>
       </h1>
     </Section>
 
