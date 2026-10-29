@@ -21,7 +21,7 @@ const menus = [
   {
     key: 'moment',
     logo: 'clock.svg',
-    file: '/menu/1015_carte_moment.jpg',
+    file: '/menu/1029_carte_moment.jpg',
     label: 'Carte du Moment'
   },
   {
@@ -36,12 +36,12 @@ const menus = [
   //   file: '/menu/1019_menu_semaine.jpg',
   //   label: 'Menus de la Semaine'
   // },
-  {
-    key: 'mecredi',
-    logo: 'hat.svg',
-    file: '/menu/1028_menu_mercredi.jpg',
-    label: 'Menu du Mercredi Soir'
-  },
+  // {
+  //   key: 'mecredi',
+  //   logo: 'hat.svg',
+  //   file: '/menu/1028_menu_mercredi.jpg',
+  //   label: 'Menu du Mercredi Soir'
+  // },
   // {
   //   key: 'samedi',
   //   logo: 'hat.svg',
