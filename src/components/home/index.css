@@ -96,6 +96,16 @@
   box-shadow: 0 18px 50px rgba(7, 7, 7, 0.07);
 }
 
+.tile .buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.tile .button {
+  flex: 1 1 auto;
+}
+
 .tile span {
   width: 48px;
   height: 7px;

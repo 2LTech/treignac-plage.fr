@@ -21,7 +21,7 @@ const menus = [
   {
     key: 'moment',
     logo: 'clock.svg',
-    file: '/menu/1029_carte_moment.jpg',
+    file: '/menu/1113_carte_moment.jpg',
     label: 'Carte du Moment'
   },
   {
@@ -43,10 +43,20 @@ const menus = [
   //   label: 'Menu du Mercredi Soir'
   // },
   {
+    key: 'special',
+    logo: 'wine.svg',
+    file: '/menu/1119_soiree_beaujolais.jpg',
+    label: 'Soirtée Beaujolais Nouveau'
+  },
+  {
     key: 'samedi',
     logo: 'hat.svg',
     file: '/menu/1114_menu_samedi.jpg',
-    label: 'Menus du Samedi Midi'
+    label: 'Menus du Samedi Midi',
+    extra: {
+      label: 'Menu',
+      file: '/menu/1114_menu_samedi_menu.jpg'
+    }
   },
   {
     key: 'vin',
@@ -165,10 +175,22 @@ const Home = () => (
         {menus.map((menu) => (
           <article key={menu.key} className="tile">
             <span aria-hidden="true" />
-            <Button icon={menu.logo} href={menu.file} pink external>
-              {menu.label}
-            </Button>
-            {/* <h3>{item}</h3> */}
+            <div className="buttons">
+              <Button
+                className="button"
+                icon={menu.logo}
+                href={menu.file}
+                pink
+                external
+              >
+                {menu.label}
+              </Button>
+              {menu.extra ? (
+                <Button className="extra" href={menu.extra.file} pink external>
+                  <Image src="plus.svg" height={30} width={30} alt="+" />
+                </Button>
+              ) : null}
+            </div>
           </article>
         ))}
       </div>
