@@ -9,6 +9,18 @@ import ZenChef from '../assets/zenchef'
 
 import './index.css'
 
+// Types
+type Menu = {
+  key: string
+  logo: string
+  file: string
+  label: string
+  extra?: {
+    label: string
+    file: string
+  }
+}
+
 // Data
 const googleMapsUrl =
   'https://www.google.fr/maps/place/Treignac+Plage+Restaurant/@45.5601224,1.814686,17z/data=!4m6!3m5!1s0x47f8ff18461683e7:0x309b3107c09ceb0c!8m2!3d45.5601224!4d1.814686!16s%2Fg%2F11zglw6r6y'
@@ -17,7 +29,7 @@ const openStreetMapUrl =
 const facebookUrl = 'https://www.facebook.com/profile.php?id=61591464093241'
 const instagramUrl = 'https://www.instagram.com/treignacplage/'
 
-const menus = [
+const menus: Menu[] = [
   {
     key: 'moment',
     logo: 'clock.svg',
@@ -48,16 +60,16 @@ const menus = [
     file: '/menu/1119_soiree_beaujolais.jpg',
     label: 'Soirtée Beaujolais Nouveau'
   },
-  {
-    key: 'samedi',
-    logo: 'hat.svg',
-    file: '/menu/1114_menu_samedi.jpg',
-    label: 'Menus du Samedi Midi',
-    extra: {
-      label: 'Menu',
-      file: '/menu/1114_menu_samedi_menu.jpg'
-    }
-  },
+  // {
+  //   key: 'samedi',
+  //   logo: 'hat.svg',
+  //   file: '/menu/1114_menu_samedi.jpg',
+  //   label: 'Menus du Samedi Midi',
+  //   extra: {
+  //     label: 'Menu',
+  //     file: '/menu/1114_menu_samedi_menu.jpg'
+  //   }
+  // },
   {
     key: 'vin',
     logo: 'wine.svg',
