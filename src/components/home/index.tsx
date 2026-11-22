@@ -39,7 +39,7 @@ const menus: Menu[] = [
   {
     key: 'vegan',
     logo: 'vegan.svg',
-    file: '/menu/1105_menu_vegetarien.jpeg',
+    file: '/menu/1120_menu_vegetarien.jpg',
     label: 'Suggestions Végétariennes'
   },
   // {
@@ -48,17 +48,17 @@ const menus: Menu[] = [
   //   file: '/menu/1019_menu_semaine.jpg',
   //   label: 'Menus de la Semaine'
   // },
-  // {
-  //   key: 'mecredi',
-  //   logo: 'hat.svg',
-  //   file: '/menu/1028_menu_mercredi.jpg',
-  //   label: 'Menu du Mercredi Soir'
-  // },
+  {
+    key: 'mecredi',
+    logo: 'hat.svg',
+    file: '/menu/1125_menu_mercredi.jpg',
+    label: 'Menu du Mercredi Soir'
+  },
   {
     key: 'special',
     logo: 'wine.svg',
-    file: '/menu/1119_soiree_beaujolais.jpg',
-    label: 'Soirtée Beaujolais Nouveau'
+    file: '/menu/2026_nouvel_an.jpg',
+    label: 'Réveillon du Nouvel An'
   },
   // {
   //   key: 'samedi',
